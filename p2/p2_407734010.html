@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMAGE</title>
+    <link rel="stylesheet" href="./css/p2_407734010.css">
+    <script>
+        $(function(){
+        var arr = ["line3","line4","line5"];
+        var curr=0;
+        setInterval (function changeclassName(index){
+            const p =document.getElementById('section');
+            console.log(p);
+            switch (index) {
+                case 1:
+                     $("#line3").removeClass();
+                     $("#line3").addClass('line3');
+                    break;
+                case 2:
+                     $("#line3").removeClass();
+                     $("#line3").addClass('line4');
+                    break;
+                case 3:
+                     $("#line3").removeClass();
+                     $("#line3").addClass('line5');
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+     <div id="container">
+        <div id="heading">
+            <h2>IMAGE</h2>
+            <ul>
+                <li onclick="changeclassName(1)"><a>Line3</a></li>
+                <li onclick="changeclassName(2)"><a>Line4</a></li>
+                <li onclick="changeclassName(3)"><a>Line5</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="section">
+                <div class="iframe-container">
+                    <div id="player">
+                        <div id="line3">
+                            <img src="./img/img1.jpg" alt="">
+                            <img src="./img/img2.jpg" alt="">
+                            <img src="./img/img3.jpg" alt="">
+                            <img src="./img/img4.jpg" alt="">
+                            <img src="./img/img5.jpg" alt="">
+                            <img src="./img/img6.jpg" alt="">
+                            <img src="./img/img7.jpg" alt="">
+                            <img src="./img/img8.jpg" alt="">
+                            <img src="./img/img9.jpg" alt="">
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
